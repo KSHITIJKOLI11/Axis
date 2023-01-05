@@ -1,12 +1,13 @@
 import java.util.Scanner;
 
 public class student extends branch {
-    String sname = "Shubham s";
-    String splace= "Mumbai s";
-    String ssubject= "Maths";
+    static String sname = "Shubham s";
+    static String splace= "Mumbai s";
+    static String ssubject= "Maths";
 
 
-        public student(String sname, String splace, String ssubject) {
+        public student(String cname, String cbranch, String cstudents, String sname, String splace, String ssubject, String bname, float bid, int btotalstaff ) {
+        super(cname, cbranch, cstudents, bname, bid, btotalstaff);
         this.sname = sname;
         this.splace = splace;
         this.ssubject = ssubject;
@@ -23,6 +24,13 @@ public class student extends branch {
 
     public void branchdetails(String bname, float bid , int btotalstaff){
         System.out.println(bname + bid + btotalstaff );
+    }
+
+    public static void main(String args[]){
+        System.out.println(sname + splace + ssubject + cname + bname);
+        System.out.println(cname +   bid   +     splace  );
+        System.out.println(bname +   bid    +    btotalstaff   );
+
     }
 
 }
