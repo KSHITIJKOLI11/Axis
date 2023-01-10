@@ -6,7 +6,7 @@ public class bank {
     private int bktotalfund;
     private float bankinterest; 
 
-    public bank(String bkname, byte bkid, long bkphno, int bktotalfund, float bankinterest){
+    public bank(String bkname, int i, long bkphno, int bktotalfund, float bankinterest){
         this.bkname=bkname;
         this.bkid=bkid;
         this.bkphno=bkphno;

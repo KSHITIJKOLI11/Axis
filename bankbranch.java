@@ -5,10 +5,10 @@ public class bankbranch extends bank {
     int brid;
     long brphno;
     private double branchtotalfund;
-    private float branchinterest;
+    protected float branchinterest;
 
-    public bankbranch (String brname, int brid, long brphno, double banktotalfund,float bankinterest,String bkname, byte bkid, long bkphno,int bktotalfund,  float branchinterest){
-        super(bkname, bkid, bkphno, bktotalfund,bankinterest);
+    public bankbranch (String brname, int brid, long brphno, double banktotalfund,float bankinterest,String bkname, int i, long bkphno,int bktotalfund,  float branchinterest){
+        super(bkname, i, bkphno, bktotalfund,bankinterest);
         super.bkname=bkname;
         super.bkid=bkid;
         super.bkphno=bkphno;
