@@ -1,7 +1,7 @@
 fun main(){
-     add()
+     add(5,6)
 }
 
-fun add():Int{
+fun add(num:Int,num1:Int){
     return 1+2;
 }
